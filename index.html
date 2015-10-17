@@ -52,22 +52,47 @@
 				</div>
 				<div class="morecities">
 					
-						<a href="#" class="morecitiesbutton">more cities</a>
+						<a href="#" class="morecitiesbutton">More Cities</a>
 					
 				</div>
 			</div>
 		</section>
 		<section class="review">
 			<div class="container">
-				<h2>Most Recent Review<h2>
+				<h2>Most Recent Review</h2>
 
 				<div class="row review-row">
 
-					<div class="col-md-8">
+					<div class="col-md-8 reviewstuff">
 
-						<div class="reviewexample">
-							<p>[lots of review stuff in here]</p>
-							<p> I want there to be some interaction here with the review button below. I'm thinking of making the click show a hidden input where you can write a review, which will then appear here... idk thoughts?
+						<div class="row">
+							<div class="col-md-1 icon">
+								<div class="usericon">icon</div>
+							</div>
+							<div class="col-md-10 reviewtitle">
+								<span class="review_variable">
+									username
+								</span>
+								<span class="static_review_title_text">
+									left a review for
+								</span>
+								<span class="review_variable">
+									PlaceName
+								</span>
+								<span class="static_review_title_text"> in </span>
+								<span class="review_variable">
+									CityName
+								</span>
+								<span class="static_review_title_text">:</span>
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="col-md-12 reviewexample">
+								<p>[Actual text of review]</p>
+								<p> Ideally: clicking "write review" results in a form appearing below here that you can fill out. Submitting the form puts the review you just entered at the top of this section. </p>
+								<p>I would also like hashtags and star ratings if possible.</p>
+							</div>
 						</div>
 
 					</div>
@@ -80,38 +105,91 @@
 
 				</div>
 
-				<a href="#" class="writereview">Write a review</a>
+				<a href="#" class="writereview">Write a Review</a>
 			</div>
 		</section>
 
 		<footer class="footer">
 
 			<div class="row footer-row">
-				<div class="col-md-3">
-					<p>Lists</p>
+				<div class="row insiderow1">
+				<div class="col-md-3 footer-list">
+					<h3>Lists</h3>
 					<ul>
-						<li>blah</li>
-						<li>blah</li>
-						<li>blah</li>
+						<li>
+							<div class="iconblank"></div><span class="li_title">Best of Plop</span><br>
+							Decided by you, our dedicated Ploppers.
+						</li>
+						<li>
+							<div class="iconblank"></div><span class="li_title">New Bathrooms</span><br>
+							Newly discovered gems.
+						</li>
+						<div class="clear"></div>
+						<li>
+							<div class="iconblank"></div><span class="li_title">Most Popular</span><br>
+							Bathrooms with the most reviews.
+						</li>
 					</ul>
 				</div>
-				<div class="col-md-3">
-					<p>Popular Places</p>
+				<div class="col-md-3 footer-list">
+					<h3>Popular Places</h3>
 					<ul>
-						<li>stuff</li>
-						<li>stuff</li>
-						<li>stuff</li>
+						<li>
+							<div class="iconblank"></div><span class="li_title">Public Bathrooms</span><br>
+							Poopular... we mean popular sites, open to everyone.
+						</li>
+						<li>
+							<div class="iconblank"></div><span class="li_title">Private Establishments</span><br>
+							These may have an entrance fee, but they're worth it.
+						</li>
+						<div class="clear"></div>
+						<li>
+							<div class="iconblank"></div><span class="li_title">World Famous</span><br>
+							Bathrooms so great, they've become legendary.
+						</li>
 					</ul>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 footer_img">
 					<div class="footerplaceholder">
 						<p> I think I want to try to do nested rows on the left over there ... I want 3 more sets of uls under these that say 'about' 'help' 'contact'<p>
 					</div>
 				</div>
+				<div class="row-md-6">
+					<div class="col-md-2 secondary_list">
+						<p class="secondary_li_title">About</p>
+						<ul>
+							<li><a href="#">About Plop</a></li>
+							<li><a href="#">Plop Blog</a></li>
+							<li><a href="#">Plop in the Press</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 secondary_list">
+						<p class="secondary_li_title">More Plop</p>
+							<ul>
+								<li><a href="#">Plop Mobile</a></li>
+								<li><a href="#">Sitemap</a></li>
+								<li><a href="#">Plop Careers</a></li>
+							</ul>
+					</div>		
+					<div class="col-md-2 secondary_list">
+						<p class="secondary_li_title">Help</p>
+							<ul>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+					</div>
 			</div>
 
-			<p class="copyright"> Copyright 2015. Plop.<p>
 
+			</div>
+				
+			</div>
+			
+
+			<div class="footer_bottom">
+				<div class="footer_icon"></div>
+				<p class="copyright"> Copyright 2015. Plop.<p>
+			</div>
 		</footer>
 
 	</body>

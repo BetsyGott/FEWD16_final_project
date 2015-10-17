@@ -58,9 +58,12 @@ body {
 /*********************/
 
 .header {
-	padding: 10px;
+	padding: 10px 0 0 0;
 	overflow: hidden;
-	background: url("../images/header_bg_1.jpg") no-repeat center;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ), url("../images/header_bg_1.jpg") no-repeat center;
 	background-width: 100%;
 	color: #fff;
 }
@@ -181,22 +184,46 @@ body {
 	margin: 0 9px;
 }
 
-.cityexample:hover {
+.cityexample:hover, .cityexample:visited {
 	color: #fff;
 }
 
 .nyc {
-	background: url(../images/nyc_icon.jpg) no-repeat center center;
+	background: url("../images/nyc_icon.jpg") no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.nyc:hover {
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.2),
+		rgba(0, 0, 0, 0.2)
+		), url("../images/nyc_icon.jpg") no-repeat center center;
 	background-size: 100% 100%;
 }
 
 .dc {
-	background: url(../images/washington_icon.jpg) no-repeat center center;
+	background: url("../images/washington_icon.jpg") no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.dc:hover {
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.2),
+		rgba(0, 0, 0, 0.2)
+		), url("../images/washington_icon.jpg") no-repeat center center;
 	background-size: 100% 100%;
 }
 
 .baltimore {
-	background: url(../images/baltimore_icon.jpg) no-repeat center center;
+	background: url("../images/baltimore_icon.jpg") no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.baltimore:hover {
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.2),
+		rgba(0, 0, 0, 0.2)
+		), url("../images/baltimore_icon.jpg") no-repeat center center;
 	background-size: 100% 100%;
 }
 
@@ -205,7 +232,7 @@ body {
 }
 
 .morecitiesbutton {
-	border: 1px solid black;
+	border: 2px solid #565A5C;
 	border-radius: 5px;
 	padding: 15px 80px;
 	font-size: 1.5rem;
@@ -215,51 +242,202 @@ body {
 
 }
 
+.morecitiesbutton:hover {
+	background-color: #DEDFDC;
+}
+
 /*********************
 / * REVIEW SECTION
 /*********************/
 
 .review {
 	border: 1px solid black;
-	background: lightblue;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.2)
+    ), url("../images/review_bg_1.jpg") no-repeat center;
+	background-size: 100%;
 	text-align: center;
 	padding: 0 0 30px 0;
-	
+}
+
+.review a {
+	text-decoration: none;
+	font-family: 'Arvo', sans-serif;
+}
+
+.review a:hover {
+	background-color: #DEDFDC;
+}
+
+.review h2 {
+	color: #fff;
 }
 
 .review-row {
 	margin: 0 0 50px 0;
 	background-color: orange;
 }
-.reviewexample {
+
+.reviewstuff {
+	background-color: pink;
+}
+
+.icon {
+	padding: 0;
+}
+
+.usericon{
+	background-color: white;
+	padding: 20px;
 	border: 1px solid black;
-	font-size: 14px;
+}
+
+.reviewtitle {
+	font-size: 2rem;
+	background-color: lightgrey;
+	display: inline-block;
+	text-align: left;
+	padding: 20px 0 0 5px;
+}
+
+.name {
+	background-color: red;
+}
+
+.review_variable {
+	font-weight: 800;
+}
+
+.static_review_title_text {
+	font-size: 1.5rem;
+}
+
+.reviewexample {
+	font-size: 1.5rem;
 	height: 200px;
+	background-color: yellow;
+	text-align: left;
 }
 
 .map {
-	border: 1px solid black;
+	border: 1px solid #fff;
 	height: 200px;
+	margin: 30px 0 20px 0;
 }
 
 .writereview {
-	border: 1px solid black;
+	border: 2px solid #565A5C;
 	border-radius: 5px;
 	padding: 10px 70px;
-	font-size: 2rem;
+	font-size: 1.7rem;
+	font-weight: 800;
+	color: #565A5C;;
+	background-color: #fff;
 }
 
 /*********************
 / * FOOTER SECTION
 /*********************/
 
+/*.footer {
+	color: #fff;
+	background: url("../images/footer_bg_3.jpg")no-repeat center center;
+	background-size: 100% 100%;	
+}*/
+
+.footer h3 {
+	font-size: 2rem;
+}
+
 .footer-row {
 	margin: 0 50px 50px 50px;
+}
+
+.footer-list {
+	font-size: 1.5rem;
+}
+
+.footer-list ul {
+	margin: 0;
+	padding: 0 0 0 7px;
+}
+
+.footer-list li {
+	list-style: none;
+	font-size: 1.2rem;
+	margin: 8px 0;
+}
+
+.iconblank {
+	float: left;
+	border: 1px solid black;
+	height: 35px;
+	width: 35px;
+	background-color: white;
+	margin: 0 5px 0 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.li_title {
+	font-size: 1.3rem;
+	font-weight: 800;
+}
+
+.footer_img {
+	float: right;
+	overflow: hidden;
 }
 
 .footerplaceholder {
 	border: 1px solid black;
 	height: 300px;
+	float: right;
+}
+
+.secondary_list {
+	margin: 20px 0 0 0;
+}
+
+.secondary_list p {
+	margin: 0;
+	padding: 0;
+}
+
+.secondary_list ul {
+	margin: 0;
+	padding: 0 0 0 7px;
+}
+
+.secondary_list li {
+	list-style: none;
+}
+
+.secondary_list a {
+	text-decoration: none;
+}
+
+.secondary_li_title {
+	font-weight: 800;
+	font-size: 1.5rem;
+}
+
+.footer_bottom {
+	background-color: blue;
+
+	text-align: center;
+	width: 300px;
+	display: inline-block;
+}
+
+.footer_icon {
+	height: 50px;
+	width: 50px;
+	background: url("../images/plop_icon.png")no-repeat center center;
+	background-size: 100% 100%;
 }
 
 .copyright {
