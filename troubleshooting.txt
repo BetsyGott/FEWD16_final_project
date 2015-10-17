@@ -1,0 +1,5 @@
+issues to bring up:
+
+how do I manipulate the header bg image so that I can determine what part of the image I want to see (instead of having it center and I can't choose)
+
+how do I make the size of the .cityexample a's correct to fit the images so they don't stretch weirdly?

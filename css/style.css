@@ -148,7 +148,8 @@ body {
 
 .cities {
 	text-align: center;
-	background-color: pink;
+	background-color: #F6F7F7;
+	color: #565A5C;
 }
 
 .cities a {
@@ -160,23 +161,43 @@ body {
 	margin: 20px 0px 50px 0;
 }
 
+.cities-header h2 {
+	font-weight: 800;
+	padding: 20px 0 0 0;
+}
+
 .cityexample-container {
 	margin: 0 auto;
-
+	width: 100%;
 }
 
 .cityexample {
 	display: inline-block;
-	padding: 60px;
-	border: 1px solid black;
-	margin: 0 35px;
-	background-color: lightgreen;
-}
-
-.cityexample {
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: 800;
 	color: #fff;
+	/*height: 200px;*/
+	padding: 135px 50px;
+	margin: 0 9px;
+}
+
+.cityexample:hover {
+	color: #fff;
+}
+
+.nyc {
+	background: url(../images/nyc_icon.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.dc {
+	background: url(../images/washington_icon.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.baltimore {
+	background: url(../images/baltimore_icon.jpg) no-repeat center center;
+	background-size: 100% 100%;
 }
 
 .morecities {
@@ -186,9 +207,12 @@ body {
 .morecitiesbutton {
 	border: 1px solid black;
 	border-radius: 5px;
-	padding: 15px 60px;
+	padding: 15px 80px;
 	font-size: 1.5rem;
-	background-color: lightgrey;
+	font-weight: 800;
+	color: #565A5C;
+	background-color: #fff;
+
 }
 
 /*********************
@@ -205,6 +229,7 @@ body {
 
 .review-row {
 	margin: 0 0 50px 0;
+	background-color: orange;
 }
 .reviewexample {
 	border: 1px solid black;
@@ -221,6 +246,7 @@ body {
 	border: 1px solid black;
 	border-radius: 5px;
 	padding: 10px 70px;
+	font-size: 2rem;
 }
 
 /*********************
