@@ -3,3 +3,39 @@ issues to bring up:
 how do I manipulate the header bg image so that I can determine what part of the image I want to see (instead of having it center and I can't choose)
 
 how do I make the size of the .cityexample a's correct to fit the images so they don't stretch weirdly?
+
+
+how do I position the rating and tag areas relative to the parent div?
+
+
+
+
+What I have left to do (in order of likelihood to complete in time):
+
+1. Write Review Functionality (JS)
+	- Add areas for user icon upload and photo upload
+	- Use Tag-it plugin to add hashtag ability
+	- write JQuery to create variables for all the input selections to get saved into
+	- style submit button so that clicking the nicely styled "Submit Review" button acts as submit
+	- when submitted, change all the existing variable areas of the default review to reflect the new review info
+
+2. Responsive Design (CS)
+	- fix responsive design of page so it looks good at smaller sizes:
+		- fixed menu at top (hamburger if I can manage it, maybe you click the plop icon?)
+		- improved spacing 
+		- fix float sections that look weird
+		- get rid of some extraneous text 
+
+
+3. Create Account Functionality (JS)
+	- clicking "create account" opens a pop-up form to fill in your info (does not actually save but will look cool)
+	- submitting the form gives you a Thank you! screen.
+
+4. Search Bar Functionality (HTML, CSS, JS)
+	- look for a plug in?
+	doesn't have to actually work but it should look like it will
+
+5. Make big links actually do something
+	- "more cities": make a pop up appear that says coming soon
+	- clicking on a city will take you somewhere or give you a pop up.
+	- small links at the bottom don't need to go anywhere.

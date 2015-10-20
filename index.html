@@ -4,11 +4,31 @@
 
 	<title>Plop: Find the Best Bathrooms in Your City</title>
 
+	<!-- font links -->
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Arvo:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+
+	<!-- normalize -->
 	<link rel="stylesheet" href="css/normalize.css"/>
+
+	<!-- bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+
+	<!-- owl carousel css -->
+	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
+
+	<!-- my css page -->
 	<link rel="stylesheet" href="css/style.css"/>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<!-- owlcarousel js -->
+	<script src="js/owl-carousel/owl.carousel.js"></script>
+
+	<!-- my js -->
+	<script src="js/script.js"></script>
 
 </head>
 
@@ -59,74 +79,273 @@
 		</section>
 		<section class="review">
 			<div class="container">
-				<h2>Most Recent Review</h2>
+				<h2 id="reviewsectiontitle">Most Recent Review:</h2>
 
-				<div class="row review-row">
+				<h2 id="newreviewsectiontitle">Write New Review:</h2>
 
-					<div class="col-md-8 reviewstuff">
+				<div class="row review-row default-review-row" id="default-review">
+
+					<div class="col-md-8">
 
 						<div class="row">
 							<div class="col-md-1 icon">
-								<div class="usericon">icon</div>
+								<div class="test_icon"></div>
 							</div>
 							<div class="col-md-10 reviewtitle">
 								<span class="review_variable">
-									username
+									Plopfan2585
 								</span>
 								<span class="static_review_title_text">
 									left a review for
 								</span>
 								<span class="review_variable">
-									PlaceName
+									Manor Buffet
 								</span>
 								<span class="static_review_title_text"> in </span>
 								<span class="review_variable">
-									CityName
+									Lancaster, PA
 								</span>
-								<span class="static_review_title_text">:</span>
+								<span class="static_review_title_text end_colon">:</span>
 							</div>
 
 						</div>
 						<div class="row">
-							<div class="col-md-12 reviewexample">
-								<p>[Actual text of review]</p>
-								<p> Ideally: clicking "write review" results in a form appearing below here that you can fill out. Submitting the form puts the review you just entered at the top of this section. </p>
-								<p>I would also like hashtags and star ratings if possible.</p>
+							<div class="col-md-12 review_content">
+								<div class="review_text">	
+									<p>Music in bathroom!
+									Beautiful design!
+									Clean!!
+									Auto everything! 
+									Baby changing station except soap dispensers! 
+									Plenty of stalls.</p>
+								</div>
+									<div class="review_ratings">
+										<h3>Ratings:</h3>
+										<span class="ratings_categories">
+											Cleanliness:
+										</span>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<span class="ratings_categories">
+											Decoration:
+										</span>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<span class="ratings_categories">
+											Features:
+										</span>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper_golden.png" class="fullstar">
+										</div>
+										<div class="stars">
+											<img src="images/MyIcons/png/toiletpaper.png" class="emptystar">
+										</div>
+									</div>
+								<div class="clear"></div>
+								<div class="review_hashtags">
+									<h3>Tags:</h3>
+									<div class="hashtags">
+										<a href="#">#automatic</a>
+										<a href="#">#babychangingstation</a>
+										<a href="#">#music</a>
+									</div>
+								</div>
 							</div>
 						</div>
 
 					</div>
 
 					<div class="col-md-4">
-
-						<p class="map">[picture]</p>
+						<div class="review_image_container owl-carousel owl-theme" id="review-image-carousel">
+							<div class="review_image">
+								<img src="images/uploaded_images/test_image2.jpg" alt="Manor Buffet Image 1">
+							</div>
+							<div class="review_image">
+								<img src="images/uploaded_images/test_image3.jpg" alt="Manor Buffet Image 2">
+							</div>
+							<div class="review_image">
+								<img src="images/uploaded_images/test_image1.jpg" alt="Manor Buffet Image 3">
+							</div>
+						</div>
 
 					</div>
 
 				</div>
+				<div class="row review-row new-review-row" id="new-review">
+					<div class="container">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
 
-				<a href="#" class="writereview">Write a Review</a>
+							    <label class="control-label col-sm-2 reviewlabel" for="username">Your Nickname:</label>
+
+							    <div class="col-sm-8">
+							        <input type="text" class="form-control" id="username">
+							    </div>
+
+						    </div>
+
+						    <div class="form-group">
+
+						     	<label class="control-label col-sm-2 reviewlabel" for="placename">Where Did You Go?</label>
+
+						    	<div class="col-sm-8">          
+						        	<input type="text" class="form-control" id="placename" placeholder="Enter the name of the store, restaurant, national monument, etc.">
+						      	</div>
+
+						    </div>
+
+						    <div class="form-group">
+
+						     	<label class="control-label col-sm-2 reviewlabel" for="placename">Which City?</label>
+
+						    	<div class="col-sm-8">          
+						        	<input type="text" class="form-control" id="cityname">
+						      	</div>
+
+						    </div>
+
+						    <div class="form-group">
+
+						     	<label class="control-label col-sm-2 reviewlabel" for="new-review-text">Write Your Review Here:</label>
+
+						    	<div class="col-sm-8">          
+						        	<div class = "form-group">
+      									<textarea class="form-control" rows="7" id="new-review-text"></textarea>
+   									</div>
+						      	</div>
+
+						    </div>
+
+						    <div class="form-group">
+
+						    	<label class="control-label col-sm-2 reviewlabel"> Cleanliness: </label>
+
+						    	<div class="col-sm-8 rating" id="clean-rating">
+    								
+    								<span><input type="radio" name="rating" id="clean-str5" value="5"><label for="clean-str5"></label></span>
+
+    								<span><input type="radio" name="rating" id="clean-str4" value="4"><label for="clean-str4"></label></span>
+    								
+    								<span><input type="radio" name="rating" id="clean-str3" value="3"><label for="clean-str3"></label></span>
+    								
+    								<span><input type="radio" name="rating" id="clean-str2" value="2"><label for="clean-str2"></label></span>
+    								
+    								<span><input type="radio" name="rating" id="clean-str1" value="1"><label for="clean-str1"></label></span>
+								
+								</div>
+
+						    </div>
+
+						    <div class="form-group">
+
+						    	<label class="control-label col-sm-2 reviewlabel"> Decoration: </label>
+
+						    	<div class="col-sm-8 rating" id="deco-rating">
+    								
+    								<span><input type="radio" name="rating" id="deco-str5" value="5"><label for="deco-str5"></label></span>
+
+    								<span><input type="radio" name="rating" id="deco-str4" value="4"><label for="deco-str4"></label></span>
+    								
+    								<span><input type="radio" name="rating" id="deco-str3" value="3"><label for="deco-str3"></label></span>
+    								
+    								<span><input type="radio" name="rating" id="deco-str2" value="2"><label for="deco-str2"></label></span>
+    								
+    								<span><input type="radio" name="rating" id="deco-str1" value="1"><label for="deco-str1"></label></span>
+								
+								</div>
+
+						    </div>
+
+						    <div class="form-group">
+
+						    	<label class="control-label col-sm-2 reviewlabel"> Features: </label>
+
+						    	<div class="col-sm-8 rating" id="feat-rating">
+    								
+    								<span><input type="radio" name="rating" id="feat-str5" value="5"><label for="feat-str5"></label></span>
+
+    								<span><input type="radio" name="rating" id="feat-str4" value="4"><label for="feat-str4"></label></span>
+    								
+    								<span><input type="radio" name="rating" id="feat-str3" value="3"><label for="feat-str3"></label></span>
+    								
+    								<span><input type="radio" name="rating" id="feat-str2" value="2"><label for="feat-str2"></label></span>
+    								
+    								<span><input type="radio" name="rating" id="feat-str1" value="1"><label for="deco-str1"></label></span>
+								
+								</div>
+
+						    </div>
+
+						    
+						    <div class="form-group">        
+						      <div class="col-sm-offset-2 col-sm-10">
+						        <button type="submit" class="btn btn-default">Submit</button>
+						      </div>
+						    </div>
+						  </form>
+						</div>
+				</div>
+
+				<a href="#" class="reviewbutton" id="writereviewbutton">Write a Review</a>
+
+				<a href="#" class="reviewbutton" id="submitreviewbutton">Submit Review</a>
+
 			</div>
 		</section>
 
 		<footer class="footer">
 
 			<div class="row footer-row">
-				<div class="row insiderow1">
+				<div class="row">
 				<div class="col-md-3 footer-list">
 					<h3>Lists</h3>
 					<ul>
 						<li>
-							<div class="iconblank"></div><span class="li_title">Best of Plop</span><br>
+							<a href="#"><img src="images/MyIcons/png/emblem.png" class="list_icon"></a><span class="li_title">Best of Plop</span><br>
 							Decided by you, our dedicated Ploppers.
 						</li>
 						<li>
-							<div class="iconblank"></div><span class="li_title">New Bathrooms</span><br>
+							<a href="#"><img src="images/MyIcons/png/new105.png" class="list_icon"></a><span class="li_title">New Bathrooms</span><br>
 							Newly discovered gems.
 						</li>
 						<div class="clear"></div>
 						<li>
-							<div class="iconblank"></div><span class="li_title">Most Popular</span><br>
+							<a href="#"><img src="images/MyIcons/png/men16.png" class="list_icon"></a><span class="li_title">Most Popular</span><br>
 							Bathrooms with the most reviews.
 						</li>
 					</ul>
@@ -135,23 +354,23 @@
 					<h3>Popular Places</h3>
 					<ul>
 						<li>
-							<div class="iconblank"></div><span class="li_title">Public Bathrooms</span><br>
+							<a href="#"><img src="images/MyIcons/png/park13.png" class="list_icon"></a><span class="li_title">Public Bathrooms</span><br>
 							Poopular... we mean popular sites, open to everyone.
 						</li>
 						<li>
-							<div class="iconblank"></div><span class="li_title">Private Establishments</span><br>
+							<a href="#"><img src="images/MyIcons/png/shop41.png" class="list_icon"></a><span class="li_title">Private Establishments</span><br>
 							These may have an entrance fee, but they're worth it.
 						</li>
 						<div class="clear"></div>
 						<li>
-							<div class="iconblank"></div><span class="li_title">World Famous</span><br>
+							<a href="#"><img src="images/MyIcons/png/sports27.png" class="list_icon"></a><span class="li_title">World Famous</span><br>
 							Bathrooms so great, they've become legendary.
 						</li>
 					</ul>
 				</div>
 				<div class="col-md-6 footer_img">
 					<div class="footerplaceholder">
-						<p> I think I want to try to do nested rows on the left over there ... I want 3 more sets of uls under these that say 'about' 'help' 'contact'<p>
+						<p> I don't know what to put here...<p>
 					</div>
 				</div>
 				<div class="row-md-6">
