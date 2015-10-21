@@ -14,10 +14,10 @@ What I have left to do (in order of likelihood to complete in time):
 
 1. Write Review Functionality (JS)
 	- Add areas for user icon upload and photo upload
-	- Use Tag-it plugin to add hashtag ability
-	- write JQuery to create variables for all the input selections to get saved into
+	- write JQuery to create variables for all the input selections to get saved into (serialize?)
 	- style submit button so that clicking the nicely styled "Submit Review" button acts as submit
 	- when submitted, change all the existing variable areas of the default review to reflect the new review info
+	- cheat with the images so they direct to already existing images on the server instead of having to deal with upload
 
 2. Responsive Design (CS)
 	- fix responsive design of page so it looks good at smaller sizes:

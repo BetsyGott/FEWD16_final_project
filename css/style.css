@@ -458,8 +458,75 @@ body {
     color:#FFF;
 }
 
+div.tagsinput { 
+	border:1px solid #CCC;
+	border-radius: 5px; 
+	background: #FFF; 
+	padding:5px; 
+	width:300px; 
+	height:100px; 
+	overflow-y: auto;
+}
 
+div.tagsinput span.tag { 
+	/*border: 1px solid #a5d24a;*/ 
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px; 
+	display: block; 
+	float: left; 
+	padding: 3px 7px; 
+	text-decoration:none; 
+	background: #ABD0DA; 
+	color: #565A5C; 
+	margin-right: 5px; 
+	margin-bottom:5px;
+	font-family: "Arvo";  
+	font-size:1.5rem;
+	font-weight: 800;
+}
 
+div.tagsinput span.tag a { 
+	font-weight: bold; 
+	color: #565A5C; 
+	text-decoration:none; 
+	font-size: 11px;  
+} 
+
+div.tagsinput input { 
+	width:80px; 
+	margin:0px; 
+	font-family: 
+	"Arvo"; font-size: 1.3rem; 
+	border:1px solid transparent; 
+	padding:5px; 
+	background: transparent; 
+	color: #000; 
+	outline:0px;  
+	margin-right:5px; 
+	margin-bottom:5px; 
+}
+
+div.tagsinput div { display:block; float: left; } 
+.tags_clear { clear: both; width: 100%; height: 0px; }
+.not_valid {background: #FBD8DB !important; color: #90111A !important;}
+
+div.rounded {
+    width: 100%;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+#previewTable {
+    width: 100%;
+}
+
+.buttonwithextrastyles {
+	margin-top: 40px;
+	font-size: 1.7rem;
+	font-family: "Arvo", sans-serif;
+}
 
 /*********************
 / * FOOTER SECTION
