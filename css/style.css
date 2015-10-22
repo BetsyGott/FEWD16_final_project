@@ -237,6 +237,12 @@ body {
 	background-size: 100% 100%;
 }
 
+.nyc:visited,
+.dc:visited,
+.baltimore:visited {
+	color: #FFF;
+}
+
 .morecities {
 	margin: 45px 0;
 }
