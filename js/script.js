@@ -64,37 +64,6 @@ $("#writereviewbutton").click(function(){
         $(this).parent().addClass('checked');
     });
 
-    var cleanRating = 0;
-
-    var decoRating = 0;
-
-    var featRating = 0;
-
-//I will need to make these unique to each id to capture the value of each rating, so there will need to be three of these ultimately
-
-//this may not be necessary because of serialize function in jquery I need to research
-
-    $("#clean-rating input:radio").change(
-    function(){
-        cleanRating = this.value;
-        // console.log(cleanRating);
-    }); 
-
-    $("#deco-rating input:radio").change(
-    function(){
-        decoRating = this.value;
-        console.log(decoRating);
- 		// console.log(cleanRating);
-    }); 
-
-    $("#feat-rating input:radio").change(
-    function(){
-        featRating = this.value;
-        // console.log(featRating);
-    }); 
-
-    //^^everything above this will change
-
 // *** below here is for image previews on upload **
 
     (function (global) {
@@ -174,7 +143,7 @@ $( "form" ).submit(function( event ) {
 
   	$("#reviewAreaDiv").html("<p>" + myReviewData[3].value + "</p>");
 
-  	// ratings will go here //
+  	// TODO: ratings will go here, using if/else//
 
   	var allTags = myReviewData[7].value;
 
@@ -184,9 +153,23 @@ $( "form" ).submit(function( event ) {
 
   	$("#hashtagDiv").html('<a href="#">'+ splitTags[0]+'</a>'+'<a href="#">'+ splitTags[1] + '</a>');
 
+  	$("#testIcon").attr("class", "new_test_icon");  
   	
+  	$("#img1").attr("src", "images/uploaded_images/new_image1.jpg");
+  	
+  	$("#img2").attr("src", "images/uploaded_images/new_image2.png");
 
-  	// $("#hashtagDiv").html(myReviewData[7].value);
+  	$("#img3").attr("src", "images/uploaded_images/new_image3.jpg");
+
+  	$("#default-review").slideDown();
+
+	$("#writereviewbutton").show();
+
+	$("#new-review").slideUp();
+
+	$("#reviewsectiontitle").show();
+
+	$("#newreviewsectiontitle").hide();
 
   	event.preventDefault();
 
