@@ -122,13 +122,6 @@ $("#writereviewbutton").click(function(){
 
 // *** above here is for image previews on upload **
 
-// experimenting with .serialize:
-
-// $( "form" ).on( "submit", function( event ) {
-//   event.preventDefault();
-//   console.log( $( this ).serialize() );
-// });
-
 $( "form" ).submit(function( event ) {
 
 	var myReviewData = $(this).serializeArray();
