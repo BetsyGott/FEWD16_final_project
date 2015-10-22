@@ -153,4 +153,45 @@ $("#writereviewbutton").click(function(){
 
 // *** above here is for image previews on upload **
 
+// experimenting with .serialize:
+
+// $( "form" ).on( "submit", function( event ) {
+//   event.preventDefault();
+//   console.log( $( this ).serialize() );
+// });
+
+$( "form" ).submit(function( event ) {
+
+	var myReviewData = $(this).serializeArray();
+
+	console.log(myReviewData);
+
+	$("#usernameSpan").html(myReviewData[0].value);
+
+	$("#placeNameSpan").html(myReviewData[1].value);
+
+	$("#cityNameSpan").html(myReviewData[2].value);
+
+  	$("#reviewAreaDiv").html("<p>" + myReviewData[3].value + "</p>");
+
+  	// ratings will go here //
+
+  	var allTags = myReviewData[7].value;
+
+  	var splitTags = allTags.split(",");
+
+  	// TO DO: write a for loop to go over each item in the splitTags array and add them dynamically instead of static like below 
+
+  	$("#hashtagDiv").html('<a href="#">'+ splitTags[0]+'</a>'+'<a href="#">'+ splitTags[1] + '</a>');
+
+  	
+
+  	// $("#hashtagDiv").html(myReviewData[7].value);
+
+  	event.preventDefault();
+
+
+
+	});
+
 });

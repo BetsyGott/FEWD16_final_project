@@ -95,17 +95,17 @@
 								<div class="test_icon"></div>
 							</div>
 							<div class="col-md-10 reviewtitle">
-								<span class="review_variable">
+								<span class="review_variable" id="usernameSpan">
 									Plopfan2585
 								</span>
 								<span class="static_review_title_text">
 									left a review for
 								</span>
-								<span class="review_variable">
+								<span class="review_variable" id="placeNameSpan">
 									Manor Buffet
 								</span>
 								<span class="static_review_title_text"> in </span>
-								<span class="review_variable">
+								<span class="review_variable" id="cityNameSpan">
 									Lancaster, PA
 								</span>
 								<span class="static_review_title_text end_colon">:</span>
@@ -114,7 +114,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12 review_content">
-								<div class="review_text">	
+								<div class="review_text" id="reviewAreaDiv">	
 									<p>Music in bathroom!
 									Beautiful design!
 									Clean!!
@@ -182,7 +182,7 @@
 								<div class="clear"></div>
 								<div class="review_hashtags">
 									<h3>Tags:</h3>
-									<div class="hashtags">
+									<div class="hashtags" id="hashtagDiv">
 										<a href="#">#automatic</a>
 										<a href="#">#babychangingstation</a>
 										<a href="#">#music</a>
@@ -217,7 +217,7 @@
 							    <label class="control-label col-sm-2 reviewlabel" for="username">Your Nickname:</label>
 
 							    <div class="col-sm-8">
-							        <input type="text" class="form-control" id="username">
+							        <input type="text" class="form-control" name="username" id="username">
 							    </div>
 
 						    </div>
@@ -227,17 +227,17 @@
 						     	<label class="control-label col-sm-2 reviewlabel" for="placename">Where Did You Go?</label>
 
 						    	<div class="col-sm-8">          
-						        	<input type="text" class="form-control" id="placename" placeholder="Enter the name of the store, restaurant, national monument, etc.">
+						        	<input type="text" class="form-control" name="placename" id="placename" placeholder="Enter the name of the store, restaurant, national monument, etc.">
 						      	</div>
 
 						    </div>
 
 						    <div class="form-group">
 
-						     	<label class="control-label col-sm-2 reviewlabel" for="placename">Which City?</label>
+						     	<label class="control-label col-sm-2 reviewlabel" for="cityname">Which City?</label>
 
 						    	<div class="col-sm-8">          
-						        	<input type="text" class="form-control" id="cityname">
+						        	<input type="text" class="form-control" name="cityname" id="cityname">
 						      	</div>
 
 						    </div>
@@ -248,7 +248,7 @@
 
 						    	<div class="col-sm-8">          
 						        	<div class = "form-group">
-      									<textarea class="form-control" rows="7" id="new-review-text"></textarea>
+      									<textarea class="form-control" name="new-review-text" rows="7" id="new-review-text"></textarea>
    									</div>
 						      	</div>
 
@@ -260,15 +260,16 @@
 
 						    	<div class="col-sm-8 rating" id="clean-rating">
     								
-    								<span><input type="radio" name="rating" id="clean-str5" value="5"><label for="clean-str5"></label></span>
+    								<span><input type="radio" name="rating" name="clean-rating" id="clean-str5" value="5"><label for="clean-str5"></label>
+    								</span>
 
-    								<span><input type="radio" name="rating" id="clean-str4" value="4"><label for="clean-str4"></label></span>
+    								<span><input type="radio" name="clean-rating" id="clean-str4" value="4"><label for="clean-str4"></label></span>
     								
-    								<span><input type="radio" name="rating" id="clean-str3" value="3"><label for="clean-str3"></label></span>
+    								<span><input type="radio" name="clean-rating" id="clean-str3" value="3"><label for="clean-str3"></label></span>
     								
-    								<span><input type="radio" name="rating" id="clean-str2" value="2"><label for="clean-str2"></label></span>
+    								<span><input type="radio" name="clean-rating" id="clean-str2" value="2"><label for="clean-str2"></label></span>
     								
-    								<span><input type="radio" name="rating" id="clean-str1" value="1"><label for="clean-str1"></label></span>
+    								<span><input type="radio" name="clean-rating" id="clean-str1" value="1"><label for="clean-str1"></label></span>
 								
 								</div>
 
@@ -300,15 +301,15 @@
 
 						    	<div class="col-sm-8 rating" id="feat-rating">
     								
-    								<span><input type="radio" name="rating" id="feat-str5" value="5"><label for="feat-str5"></label></span>
+    								<span><input type="radio" name="featrating" id="feat-str5" value="5"><label for="feat-str5"></label></span>
 
-    								<span><input type="radio" name="rating" id="feat-str4" value="4"><label for="feat-str4"></label></span>
+    								<span><input type="radio" name="featrating" id="feat-str4" value="4"><label for="feat-str4"></label></span>
     								
-    								<span><input type="radio" name="rating" id="feat-str3" value="3"><label for="feat-str3"></label></span>
+    								<span><input type="radio" name="featrating" id="feat-str3" value="3"><label for="feat-str3"></label></span>
     								
-    								<span><input type="radio" name="rating" id="feat-str2" value="2"><label for="feat-str2"></label></span>
+    								<span><input type="radio" name="featrating" id="feat-str2" value="2"><label for="feat-str2"></label></span>
     								
-    								<span><input type="radio" name="rating" id="feat-str1" value="1"><label for="deco-str1"></label></span>
+    								<span><input type="radio" name="featrating" id="feat-str1" value="1"><label for="deco-str1"></label></span>
 								
 								</div>
 
@@ -333,7 +334,7 @@
 						    	<div class="col-sm-8">          
 						        	
 						    		<div id="imagesDiv" class="rounded">
-    									<input type="file" id="chooseFiles" multiple="multiple" />
+    									<input type="file" id="chooseFiles" name="reviewimg" multiple="multiple" />
     									<table id="previewTable">
         									<thead id="columns"></thead>
         									<tbody id="previews"></tbody>
@@ -347,7 +348,7 @@
 						    
 						    <div class="form-group">        
 						      <div class="col-sm-12">
-						        <button type="submit" class="btn btn-default reviewbutton buttonwithextrastyles">Submit Review
+						        <button type="submit" class="btn btn-default reviewbutton buttonwithextrastyles" name="submitbtn" id="submitbtn">Submit Review
 						        </button>
 						      </div>
 						    </div>
