@@ -155,8 +155,8 @@ body {
 .searchbarplaceholder {
 	margin: 0 auto;
 	text-align: center;
-	padding: 8px;
-	border: 2px solid #15110B;
+	padding: 7px;
+	/*border: 2px solid #fff;*/
 	width: 350px;
 	border-radius: 5px;
 	background-color: rgba(255,255,255,.5);
@@ -164,7 +164,7 @@ body {
 }
 
 .searchbutton {
-	border: 2px solid #15110B;
+	/*border: 2px solid #15110B;*/
 	background-color: rgba(0,0,0,.5);
 	padding: 8px 30px;
 	border-radius: 5px;
